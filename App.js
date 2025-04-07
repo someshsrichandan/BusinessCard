@@ -10,19 +10,10 @@ import {
 } from "react-native";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import ProjectCard from "./ProjectCard";
 
 
-function ProjectCard ({ name, image }) {
-  return (
-    <View>
-      <Image
-        source={image}
-        style={{ height: 150, aspectRatio: 16 / 9 , borderRadius: 10 }}
-      />
-      <Text style={{ fontSize: 16 }}>{name}</Text>
-    </View>
-  );
-}
+
 
 export default function App() {
   const handelPress = () => {
